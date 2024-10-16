@@ -75,7 +75,9 @@ header {
   padding: 10px;
   border-bottom: 1px solid white;
 }
-
+.menu-icon{
+  display: none;
+}
 .navbar {
   list-style-type: none;
   width: 100%;
@@ -210,4 +212,38 @@ header {
   }
 }
 
+}
+
+@media (width > 760px) and (width < 1024px){
+
+  .navbar{
+    justify-content: center;
+    align-items: center;
+    li{
+      width: 100%;
+      border-top: 1px solid #ffffff;
+    }
+  }
+  .articles-container{
+    gap: 40px;
+  }
+  .article {
+    width: 45%;
+  }
+
+}
+
+/* BONUS ITERATION */
+
+@media (width < 480px){
+
+  .newspaper-name {
+    border-bottom: none
+  }
+  .menu-icon{
+    display: block;
+  }
+  .navbar{
+    display: none;
+  }
 }
